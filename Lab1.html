@@ -6,20 +6,64 @@
 </head>
 <form>
     <level for ="SName">Student Name: </level>
-    <input type ="text" name ="SName" id="SName" placeholder="Enter Your Name">
+    <input type ="text" id="SName" name ="SName" placeholder="Enter Your Name">
     <br><br>
 
     <level for ="Cgpa">Student CGPA: </level>
-    <input type ="text" name ="Cgpa" id="Cgpa" placeholder="Enter Your CGPA">
+    <input type ="text" id="Cgpa" name ="Cgpa" placeholder="Enter Your CGPA">
     <br><br>
 
     <level for ="GenMale">Male </level>
-    <input type ="radio" name ="GenMale" id="GenMale" value="Male">
+    <input type ="radio" id="GenMale" name ="GenMale" value="Male">
     <br><br>
 
     <level for ="GenFemale">Female </level>
-    <input type ="radio" name ="GenFemale" id="GenFemale" value="Female">
+    <input type ="radio" id="GenFemale" name ="GenFemale" value="Female">
     <br><br>
+
+    <level for ="Dept">Select Department: </level>
+    <select>
+        <option values = "CSE">CSE</option>
+        <option values = "EEE">EEE</option>
+        <option values = "IPE">IPE</option>
+
+    </select>
+    <br><br>
+
+    <level for ="SId">Student ID: </level>
+    <input type ="text" id="SId" name ="SId">
+    <br><br>
+
+    <level for ="Address">Address: </level>
+    <textarea id ="Address" name ="Address" rows="4" cols="40" placeholder="Enter your address here"></textarea>
+    <br><br>
+
+    <label for ="DOB">Date of Birth:</label>
+    <input type ="date" id ="DOB" name ="DOB">
+    <br><br>
+
+    <label for ="Email">Email: </label>
+    <input type ="text" id ="Email" name = "Email" placeholder="Enter your email">
+    <br><br>
+
+    <label for="Insertfile">Upload your Grade Report: </label>
+    <input type ="file" id="file" name ="file"> 
+    <br><br>
+
+    <label for="T&C">I agree to the terms and conditions</label>
+    <input type ="checkbox" id="T&C" name ="T&C"> 
+    <br><br>
+
+    <label for="Phone">Phone Number: </label>
+    <input type ="tel" id="Phone" name ="Phone" placeholder="Enter your phone number">
+    <br><br>
+
+    <label for="Submit">Submit your information </label>
+    <br><br>
+
+    <input type="submit" id ="submit" name ="submit">
+    <br><br>
+
 
 </form>
 
