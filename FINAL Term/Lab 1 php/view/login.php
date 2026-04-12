@@ -26,6 +26,38 @@ echo "<h1 style='color:red;'>Log In Form</h1>";
 
 </form>
 
+<?php
+echo "<h1 style = 'color: red'> Hello php </h1>";
+$text1 = "Hello PHP";
+$text2 = "Web Technology";
+echo "$text1<br>";
+echo $text2; 
+echo '<h1>'.$text1. '</h1>'; 
+echo "<h1> $text1 </h1>"; 
+
+$var1 = 19.6;
+$var2 = 10; 
+echo $var1 + $var2;
+echo "<br>";
+if($var1>0)
+    {
+        echo "positve";
+    }
+    else{
+        echo "negative";
+    }
+
+echo "<br>";
+$car = array("WebTechnology", "C#", "Python");
+var_dump($car); 
+echo "<br>";
+
+$cars = array("Course"=> "WebTechnology", "Section"=>"R");
+echo $cars["Course"];
+
+
+
+?>
 
 </body>
 </html>
