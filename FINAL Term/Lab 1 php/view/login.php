@@ -7,7 +7,9 @@ echo "<h1 style='color:red;'>Log In Form</h1>";
 ?>
 
 <form method = "post" action="../Controller/loginvalidation.php">
+
 <table>
+
 <tr>
 <td><p> User Name: </p></td>
 <td><input type ="text"/></td>
@@ -19,7 +21,9 @@ echo "<h1 style='color:red;'>Log In Form</h1>";
 <tr>
 <td><input type = "submit"/></td>
 </tr>
+
 </table>
+
 </form>
 
 
