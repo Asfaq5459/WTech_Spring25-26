@@ -20,13 +20,19 @@ include "../Controller/Registrationvalidation.php";
                     <td> <p style = 'color: red'>*</p> </td>
                 
                 </tr>
-               <tr>
+                <tr>
                     <td> <label for ="password"> Password: </label></td>
                     <td> <input type = "password" id="pass" name ="password"><?php echo $password ?></td>
                 </tr>
                 <tr>
-                    <td><input type = "submit" id = "submit" name = "submit" </td>
+                   <td><label for="email">E-mail:</label></td>
+                   <td><input type="email" id="email" name="email"><?php echo $email; ?></td>
+                   <td><p style="color:red;">*</p></td>
                 </tr>
+                <tr>
+                    <td><input type = "submit" id = "submit" name = "submit" value="Submit"> </td>
+                </tr>
+                
             </table>
         </form>
     </body>
