@@ -34,7 +34,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     }
     else
     {   
-        echo "Password must be at least 4 characters<br>";               
+        echo "Password must be at least 6 characters<br>";               
     }
 
     if($email != "")
