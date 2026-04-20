@@ -15,14 +15,14 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
         $email= $_POST["email"];
         $website = $_POST["website"];
         $comment = $_POST["comment"];
-        $gender = $_POST["gender"];
+        $gender = $_POST["gender"]?? "";
 
         $name = $_REQUEST["name"];
         $password= $_REQUEST["password"];
         $email= $_REQUEST["email"];
         $website = $_REQUEST["website"];
         $comment = $_REQUEST["comment"];
-        $gender = $_REQUEST["gender"];
+        $gender = $_REQUEST["gender"]?? "";
 
     if(!empty($name) && strlen($name)>=5)
         {
