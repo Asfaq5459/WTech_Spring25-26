@@ -4,16 +4,25 @@ $name="";
 $password ="";
 $validpassword = "";
 $email = "";
+$website = "";
+$comment = "";
+$gender = "";
 
 if($_SERVER["REQUEST_METHOD"]=="POST")
     {
         $name = $_POST["name"];
         $password= $_POST["password"];
         $email= $_POST["email"];
+        $website = $_POST["website"];
+        $comment = $_POST["comment"];
+        $gender = $_POST["gender"];
 
         $name = $_REQUEST["name"];
         $password= $_REQUEST["password"];
-        $email= $_POST["email"];
+        $email= $_REQUEST["email"];
+        $website = $_REQUEST["website"];
+        $comment = $_REQUEST["comment"];
+        $gender = $_REQUEST["gender"];
 
     if(!empty($name) && strlen($name)>=5)
         {
@@ -38,6 +47,32 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
        {
         echo "Invalid Email format<br>";
         }
+    if($website != "")
+    {
+        echo "Website: ".$website."<br>";
+    }
+    else
+    {
+        echo "Website need to write<br>";
+    }
+
+    if($comment != "")
+    {
+        echo "Comment: ".$comment."<br>";
+    }
+    else
+    {
+        echo "Comment is empty<br>";
+    }
+
+    if(!empty($gender))
+    {
+        echo "Gender: ".$gender."<br>";
+    }
+    else
+    {
+        echo "Gender is required to select<br>";
+    }
     }
 
 ?>

@@ -28,7 +28,27 @@ include "../Controller/Registrationvalidation.php";
                    <td><label for="email">E-mail:</label></td>
                    <td><input type="email" id="email" name="email"><?php echo $email; ?></td>
                    <td><p style="color:red;">*</p></td>
+                </tr>   
+                <tr>
+                    <td>Website:</td>
+                    <td><input type="text" name="website"> <?php echo $website; ?></td>
                 </tr>
+                <tr>
+                    <td>Comment:</td>
+                    <td><textarea name="comment"></textarea> <?php echo $comment; ?> </td>
+                </tr>
+
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" value="Female">Female
+                        <input type="radio" name="gender" value="Male">Male
+                        <input type="radio" name="gender" value="Other">Other
+                        <?php echo $gender; ?>
+                    </td>
+                    <td style="color:red">*</td>
+                </tr>
+
                 <tr>
                     <td><input type = "submit" id = "submit" name = "submit" value="Submit"> </td>
                 </tr>
